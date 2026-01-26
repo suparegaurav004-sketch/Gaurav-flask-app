@@ -67,7 +67,7 @@ pipeline {
             script{
                 emailext from:'abhimore2305@gmail.com',
                     to:'abhimore2305@gmail.com',
-                    body:'Build sucess for demo CICD APP'
+                    body:'Build sucess for demo CICD APP',
                     subject:'Build sucess for demo CICD APP'
             }
                 
@@ -77,7 +77,7 @@ pipeline {
             script{
              emailext from:'abhimore2305@gmail.com',
                     to:'abhimore2305@gmail.com',
-                    body:'Build fail for demo CICD APP'
+                    body:'Build fail for demo CICD APP',
                     subject:'Build fail for demo CICD APP'
         }
     }
