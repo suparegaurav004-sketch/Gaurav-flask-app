@@ -79,6 +79,7 @@ pipeline {
                     to:'abhimore2305@gmail.com',
                     body:'Build fail for demo CICD APP',
                     subject:'Build fail for demo CICD APP'
+            }
         }
     }
 }
