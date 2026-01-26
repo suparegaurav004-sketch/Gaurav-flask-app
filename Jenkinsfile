@@ -74,7 +74,10 @@ pipeline {
         }
 
         failure {
-            echo "Pipeline Failed - Please Check Logs"
+             emailext from:'abhimore2305@gmail.com',
+                    to:'abhimore2305@gmail.com',
+                    body:'Build fail for demo CICD APP'
+                    subject:'Build fail for demo CICD APP'
         }
     }
 }
