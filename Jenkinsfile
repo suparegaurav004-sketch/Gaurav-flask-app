@@ -64,7 +64,13 @@ pipeline {
 
     post {
         success {
-            echo "Application Successfully Deployed on http://localhost:5000"
+            script{
+                emailext from:'abhimore2305@gmail.com',
+                    to:'abhimore2305@gmail.com',
+                    body:'Build sucess for demo CICD APP'
+                    subject:'Build sucess for demo CICD APP'
+            }
+                
         }
 
         failure {
